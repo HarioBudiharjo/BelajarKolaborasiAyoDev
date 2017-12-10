@@ -1,3 +1,7 @@
+<?php
+
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,7 +9,7 @@
 </head>
 <body>
 <img src="img/pemandangan.jpg">
-<form >
+<form method = "post">
 	<label>
 		Username :
 		<input type="text" name="username">
@@ -15,7 +19,11 @@
 		password :
 		<input type="password" name="password">
 	</label>
+	<input type="submit">
 	<br>
+	<?php 
+	echo"Nama : ".$_POST["username"];
+	?>
 </form>
 </body>
 </html>
